@@ -38,13 +38,13 @@ Represents specific instances of templates, such as `LoginPage`, showing full-fl
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your/repository.git
+   git clone https://github.com/sharfe25/atomic_flutter_package.git
    ```
 
 2. Navigate to the example directory:
 
 ```bash
-cd connect_fake_store/example
+cd atomic_flutter_package/example
 ```
 
 3. Install dependencies:
