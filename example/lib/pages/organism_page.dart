@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:atomic_flutter_package/atomic_flutter_package.dart';
-import 'package:atomic_flutter_package/models/card_model.dart';
+import 'package:ecommerce_design_system_package/ecommerce_design_system_package.dart';
+import 'package:ecommerce_design_system_package/models/card_model.dart';
 
 /// Widget to showcase organisms from the Atomic Flutter Package.
 class OrganismPage extends StatelessWidget {
@@ -49,15 +49,12 @@ class OrganismPage extends StatelessWidget {
               const SizedBox(height: 40),
               const Text('Cards Grid:'),
               const SizedBox(height: 10),
-              SizedBox(
-                height: 600,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                  child: CardsGrid(
-                    title: 'Test',
-                    cards: cardsData,
-                    isLoading: false,
-                  ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                child: CardsGrid(
+                  title: 'Test',
+                  cards: cardsData,
+                  isLoading: false,
                 ),
               ),
               const SizedBox(height: 20),

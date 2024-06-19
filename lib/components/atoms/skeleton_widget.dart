@@ -55,13 +55,10 @@ class _SkeletonWidgetState extends State<SkeletonWidget> with SingleTickerProvid
   @override
   Widget build(BuildContext context) {
     return FadeTransition(
-      // Applying the opacity animation to the FadeTransition widget.
       opacity: _animation,
       child: Container(
-        // Setting the height and width from the widget properties.
         height: widget.height,
         width: widget.width,
-        // Styling the container to look like a skeleton placeholder.
         decoration: BoxDecoration(
           color: Colors.grey[300],
           borderRadius: BorderRadius.circular(20),

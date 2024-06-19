@@ -1,4 +1,4 @@
-import 'package:atomic_flutter_package/models/chip_model.dart';
+import 'package:ecommerce_design_system_package/models/chip_model.dart';
 import 'package:flutter/material.dart';
 
 import '../atoms/chip_widget.dart';
@@ -10,7 +10,6 @@ import '../tokens/app_spacing.dart';
 /// and displays each category as a chip. Tapping on a chip triggers the retrieval
 /// of products belonging to that category using a [ProductProvider].
 class ChipsCarousel extends StatelessWidget {
-  /// The chip data.
   final List<ChipModel> chips;
 
   /// Creates a [ChipsCarousel].

@@ -1,4 +1,4 @@
-import 'package:atomic_flutter_package/atomic_flutter_package.dart';
+import 'package:ecommerce_design_system_package/ecommerce_design_system_package.dart';
 import 'package:flutter/material.dart';
 
 /// Widget to showcase pages from the Atomic Flutter Package.

@@ -30,10 +30,10 @@ class LoginTemplate extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login'), // Title of the app bar
+        title: const Text('Login'),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0), // Padding around the body content
+        padding: const EdgeInsets.all(16.0),
         child: LoginForm(
           usernameController: usernameController,
           passwordController: passwordController,

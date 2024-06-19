@@ -39,13 +39,11 @@ class DashboardTemplate extends StatelessWidget {
       backgroundColor: AppColors.grayColor,
       body: Column(
         children: [
-          // Custom app bar with provided title and callbacks
           CustomAppBar(
             color: Colors.blueGrey,
             title: title,
             onTapBack: onTapBack,
           ),
-          // Expanded body content to occupy remaining space
           Expanded(
             child: Padding(
               padding: const EdgeInsets.only(
