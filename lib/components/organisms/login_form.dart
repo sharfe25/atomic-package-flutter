@@ -30,19 +30,16 @@ class LoginForm extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // Username text field
         TextField(
           controller: usernameController,
           decoration: const InputDecoration(labelText: 'Username'),
         ),
-        // Password text field
         TextField(
           controller: passwordController,
           decoration: const InputDecoration(labelText: 'Password'),
-          obscureText: true, // Masks the input for the password field
+          obscureText: true, 
         ),
-        const SizedBox(height: 16), // Spacer
-        // Login button
+        const SizedBox(height: 16),
         IconButtonWidget(
           icon: Icons.login,
           onPressed: onLogin,

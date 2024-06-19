@@ -27,7 +27,7 @@ class OptionCardWidget extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        alignment: Alignment.centerLeft,
+        alignment: Alignment.center,
         margin: const EdgeInsets.only(top: 8),
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(

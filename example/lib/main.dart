@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Atomic Design'), // Set initial route to MyHomePage
+      home: const MyHomePage(title: 'Atomic Design'),
     );
   }
 }
@@ -46,7 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title), // Display title received from MyHomePage constructor
+        title: Text(
+            widget.title), // Display title received from MyHomePage constructor
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -56,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
               const Padding(
                 padding: EdgeInsets.all(8.0),
                 child: Text(
-                  'In this example you can understand atomic design using the atomic_flutter_package package:',
+                  'In this example you can understand atomic design using the ecommerce_design_system_package package:',
                 ),
               ),
               Padding(
@@ -79,7 +80,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const AtomsPage()),
+                          MaterialPageRoute(
+                              builder: (context) => const AtomsPage()),
                         );
                       },
                     ),
@@ -89,7 +91,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MoleculesPage()),
+                          MaterialPageRoute(
+                              builder: (context) => MoleculesPage()),
                         );
                       },
                     ),
@@ -99,7 +102,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => OrganismPage()),
+                          MaterialPageRoute(
+                              builder: (context) => OrganismPage()),
                         );
                       },
                     ),
@@ -109,7 +113,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const PagesPage()),
+                          MaterialPageRoute(
+                              builder: (context) => const PagesPage()),
                         );
                       },
                     ),
@@ -119,7 +124,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const TemplatesPage()),
+                          MaterialPageRoute(
+                              builder: (context) => const TemplatesPage()),
                         );
                       },
                     ),

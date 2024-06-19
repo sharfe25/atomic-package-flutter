@@ -1,4 +1,4 @@
-import 'package:atomic_flutter_package/models/card_model.dart';
+import 'package:ecommerce_design_system_package/models/card_model.dart';
 import 'package:flutter/material.dart';
 import '../tokens/app_colors.dart';
 import '../tokens/app_spacing.dart';
@@ -25,7 +25,6 @@ class DetailCard extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        // Display the image
         Container(
           width: 200,
           height: 180,
@@ -38,7 +37,6 @@ class DetailCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
         ),
-        // Display the title
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 4.0),
           child: Text(
@@ -51,7 +49,6 @@ class DetailCard extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
           ),
         ),
-        // Display the subtitle
         Expanded(
           child: Text(
             cardData.subtitle,

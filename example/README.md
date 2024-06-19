@@ -32,19 +32,19 @@ Represents specific instances of templates, such as `LoginPage`, showing full-fl
 ## Getting Started
 
 ### Prerequisites
-- Ensure you have Flutter installed. See [Flutter installation guide](https://github.com/sharfe25/atomic_flutter_package.git).
+- Ensure you have Flutter installed. See [Flutter installation guide](https://github.com/sharfe25/ecommerce_design_system_package.git).
 
 ### Running the Example
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/sharfe25/atomic_flutter_package.git
+   git clone https://github.com/sharfe25/ecommerce_design_system_package.git
    ```
 
 2. Navigate to the example directory:
 
 ```bash
-cd atomic_flutter_package/example
+cd ecommerce_design_system_package/example
 ```
 
 3. Install dependencies:

@@ -1,5 +1,6 @@
-import 'package:atomic_flutter_package/models/card_model.dart';
+
 import 'package:flutter/material.dart';
+import '../../models/card_model.dart';
 import '../molecules/detail_card.dart';
 import '../molecules/grid_skeleton.dart';
 import '../tokens/app_spacing.dart';
@@ -38,7 +39,6 @@ class CardsGrid extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Display the title text
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
@@ -46,9 +46,7 @@ class CardsGrid extends StatelessWidget {
               style: AppTextStyles.subtitle,
             ),
           ),
-          //Display the skeleton
           if (isLoading) const GridSkeleton(),
-          // Display the grid of product cards
           if (!isLoading)
             GridView.builder(
               shrinkWrap: true,

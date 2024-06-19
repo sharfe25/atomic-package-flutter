@@ -47,7 +47,6 @@ class CustomAppBar extends StatelessWidget {
       ),
       child: Stack(
         children: [
-          // Display the menu icon if onTapBack is null
           if (onTapBack == null)
             Align(
               alignment: Alignment.centerLeft,
@@ -57,7 +56,6 @@ class CustomAppBar extends StatelessWidget {
                 iconSize: 22,
               ),
             ),
-          // Display the back icon if onTapBack is provided
           if (onTapBack != null)
             Align(
               alignment: Alignment.centerLeft,
@@ -71,14 +69,12 @@ class CustomAppBar extends StatelessWidget {
                 iconSize: 20,
               ),
             ),
-          // Display the title text in the center
           Center(
             child: Text(
               title ?? '',
               style: AppTextStyles.subtitle.copyWith(color: AppColors.blackColor),
             ),
           ),
-          // Display the bag icon if onTapBag is provided
           if (onTapBag != null)
             Align(
               alignment: Alignment.centerRight,
