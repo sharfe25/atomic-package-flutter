@@ -1,6 +1,4 @@
 import 'package:ecommerce_design_system_package/ecommerce_design_system_package.dart';
-import 'package:ecommerce_design_system_package/models/card_model.dart';
-import 'package:ecommerce_design_system_package/models/chip_model.dart';
 import 'package:flutter/material.dart';
 
 /// Widget to showcase molecules from the Atomic Flutter Package.
@@ -36,16 +34,17 @@ class MoleculesPage extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              const SizedBox(
+              SizedBox(
                 height: 300,
                 child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 80.0),
-                  child: DetailCard(
-                    cardData: CardModel(
-                        id: 1,
+                  padding: const EdgeInsets.symmetric(horizontal: 80.0),
+                  child: ProductCard(
+                    product: ProductCardModel(
                         title: 'Title test',
-                        image: 'assets/molecule.png',
-                        subtitle: 'Subtitle test'),
+                        image: 'https://picsum.photos/400/400',
+                        price: 20,
+                        onTapProduct: () {},
+                        addToCart: () {}),
                   ),
                 ),
               ),

@@ -9,10 +9,10 @@ import '../tokens/app_spacing.dart';
 /// can respond to tap events with a custom callback function.
 class IconButtonWidget extends StatelessWidget {
   /// The callback function to be called when the button is pressed.
-  final VoidCallback onPressed;
+  final VoidCallback onTap;
 
   /// The background color of the icon.
-  final Color? backgroundColor;
+  final Color? iconColor;
 
   /// The icon to be displayed in the button.
   final IconData icon;
@@ -20,32 +20,40 @@ class IconButtonWidget extends StatelessWidget {
   /// The size of the icon.
   final double? iconSize;
 
+  /// The background color of the button.
+  final Color? backgroundColor;
+
+  /// The padding inside the button. Defaults to [AppSpacing.medium].
+  final double padding;
+
   /// Creates an [IconButtonWidget].
   ///
-  /// The [onPressed] and [icon] parameters are required. The [backgroundColor]
-  /// and [iconSize] parameters are optional.
-  const IconButtonWidget(
-      {Key? key,
-      required this.onPressed,
-      this.backgroundColor,
-      this.iconSize,
-      required this.icon})
-      : super(key: key);
+  /// The [onTap] and [icon] parameters are required. The [iconColor],
+  /// [iconSize], and [backgroundColor] parameters are optional.
+  const IconButtonWidget({
+    Key? key,
+    required this.onTap,
+    this.iconColor,
+    this.iconSize,
+    required this.icon,
+    this.backgroundColor,
+    this.padding = AppSpacing.medium,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: onPressed,
+      onTap: onTap,
       child: Container(
-        padding: const EdgeInsets.all(AppSpacing.medium),
+        padding: EdgeInsets.all(padding),
         decoration: BoxDecoration(
-          color: AppColors.grayColor,
+          color: backgroundColor ?? AppColors.grayColor,
           borderRadius: BorderRadius.circular(20),
         ),
         child: Icon(
           icon,
           size: iconSize ?? 20,
-          color: backgroundColor,
+          color: iconColor,
         ),
       ),
     );

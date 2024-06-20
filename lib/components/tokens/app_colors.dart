@@ -11,4 +11,5 @@ class AppColors {
   static const Color subtitleColor = Color(0xFF797780);
   static const Color cardColor = Color(0xFFF4F4F4);
   static const Color blackColor = Color.fromARGB(255, 39, 39, 39);
+  static const Color disabledColor = Color(0xFFDEDEDE);
 }

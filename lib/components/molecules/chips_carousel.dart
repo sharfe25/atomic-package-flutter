@@ -1,7 +1,6 @@
-import 'package:ecommerce_design_system_package/models/chip_model.dart';
+import 'package:ecommerce_design_system_package/ecommerce_design_system_package.dart';
 import 'package:flutter/material.dart';
 
-import '../atoms/chip_widget.dart';
 import '../tokens/app_spacing.dart';
 
 /// A widget that displays a horizontal carousel of category chips.

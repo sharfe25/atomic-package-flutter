@@ -1,36 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:ecommerce_design_system_package/ecommerce_design_system_package.dart';
-import 'package:ecommerce_design_system_package/models/card_model.dart';
 
 /// Widget to showcase organisms from the Atomic Flutter Package.
 class OrganismPage extends StatelessWidget {
   OrganismPage({Key? key}) : super(key: key);
 
-  final List<CardModel> cardsData = [
-    const CardModel(
-      id: 1,
-      title: 'Title 1',
-      image: 'assets/molecule.png',
-      subtitle: 'Subtitle',
-    ),
-    const CardModel(
-      id: 2,
-      title: 'Title 2',
-      image: 'assets/molecule.png',
-      subtitle: 'Subtitle',
-    ),
-    const CardModel(
-      id: 3,
-      title: 'Title 3',
-      image: 'assets/molecule.png',
-      subtitle: 'Subtitle',
-    ),
-    const CardModel(
-      id: 4,
-      title: 'Title 4',
-      image: 'assets/molecule.png',
-      subtitle: 'Subtitle',
-    ),
+  final List<ProductCardModel> cardsData = [
+    ProductCardModel(
+        title: 'Title 1',
+        image: 'https://picsum.photos/400/400',
+        price: 20,
+        onTapProduct: () {},
+        addToCart: () {}),
+    ProductCardModel(
+        title: 'Title 2',
+        image: 'https://picsum.photos/400/400',
+        price: 20,
+        onTapProduct: () {},
+        addToCart: () {}),
+    ProductCardModel(
+        title: 'Title 3',
+        image: 'https://picsum.photos/400/400',
+        price: 20,
+        onTapProduct: () {},
+        addToCart: () {}),
+    ProductCardModel(
+        title: 'Title 4',
+        image: 'https://picsum.photos/400/400',
+        price: 20,
+        onTapProduct: () {},
+        addToCart: () {}),
   ];
 
   @override

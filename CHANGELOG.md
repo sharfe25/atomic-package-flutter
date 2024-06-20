@@ -10,3 +10,9 @@
 
 
 - Bugs Fixed
+
+
+## 1.0.2 - 2024-06-20
+
+
+- New componentes added

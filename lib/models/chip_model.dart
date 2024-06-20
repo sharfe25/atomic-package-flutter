@@ -9,13 +9,13 @@ class ChipModel {
   final String title;
 
   /// The callback function to be executed when the chip is tapped.
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
 
   /// Creates a [ChipModel].
   ///
   /// Both [title] and [onTap] parameters are required.
   const ChipModel({
     required this.title,
-    required this.onTap,
+    this.onTap,
   });
 }

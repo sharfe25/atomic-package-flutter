@@ -10,7 +10,6 @@ void main() {
   runApp(const MyApp());
 }
 
-/// The main application widget.
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -19,7 +18,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      // Theme configuration
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
@@ -29,7 +27,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/// Represents the home page of the application.
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -39,7 +36,6 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-/// The state for MyHomePage widget.
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
@@ -47,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(
-            widget.title), // Display title received from MyHomePage constructor
+            widget.title),
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -73,7 +69,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     childAspectRatio: 1 / 1.0,
                   ),
                   children: <Widget>[
-                    // Option cards for different atomic design levels
                     OptionCardWidget(
                       title: 'Atoms',
                       urlImage: 'assets/atom.png',

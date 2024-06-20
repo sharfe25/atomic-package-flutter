@@ -42,7 +42,7 @@ class LoginForm extends StatelessWidget {
         const SizedBox(height: 16),
         IconButtonWidget(
           icon: Icons.login,
-          onPressed: onLogin,
+          onTap: onLogin,
         ),
       ],
     );

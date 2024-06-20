@@ -61,12 +61,12 @@ flutter run
 5. Explore the example.
 
 ## Screenshots
-![Preview](home.png){height=200px}
-![Preview](atoms.png){height=200px}
-![Preview](molecules.png){height=200px}
-![Preview](organism.png){height=200px}
-![Preview](pages.png){height=200px}
-![Preview](templates.png){height=200px}
+![Preview](home.png)
+![Preview](atoms.png)
+![Preview](molecules.png)
+![Preview](organism.png)
+![Preview](pages.png)
+![Preview](templates.png)
 
 ## License
 This example is licensed under the MIT License. See the [LICENSE] (https://choosealicense.com/licenses/mit/) file for more details.

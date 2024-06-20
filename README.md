@@ -45,8 +45,8 @@ Example:
 ```dart
 import 'package:ecommerce_design_system_package/molecules/detail_card.dart';
 
-DetailCard(
-  cardData: CardModel(
+ProductCard(
+  cardData: ProductCardModel(
       id: 1,
       title: 'Title test',
       image: 'assets/molecule.png',

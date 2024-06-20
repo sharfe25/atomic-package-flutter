@@ -1,7 +1,6 @@
-
+import 'package:ecommerce_design_system_package/components/molecules/product_card.dart';
 import 'package:flutter/material.dart';
-import '../../models/card_model.dart';
-import '../molecules/detail_card.dart';
+import '../../models/product_card_model.dart';
 import '../molecules/grid_skeleton.dart';
 import '../tokens/app_spacing.dart';
 import '../tokens/app_text_styles.dart';
@@ -15,7 +14,7 @@ class CardsGrid extends StatelessWidget {
   final String title;
 
   /// The list of cards to be displayed in the grid.
-  final List<CardModel> cards;
+  final List<ProductCardModel> cards;
 
   /// The load indicator.
   final bool isLoading;
@@ -60,7 +59,7 @@ class CardsGrid extends StatelessWidget {
                 childAspectRatio: 1 / 1.5,
               ),
               itemBuilder: (context, index) {
-                return DetailCard(cardData: cards[index]);
+                return ProductCard(product: cards[index]);
               },
             ),
         ],

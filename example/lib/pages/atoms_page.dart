@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ecommerce_design_system_package/models/chip_model.dart';
 import 'package:ecommerce_design_system_package/ecommerce_design_system_package.dart';
 
 /// Widget to showcase atoms from the Atomic Flutter Package.
@@ -31,7 +30,7 @@ class AtomsPage extends StatelessWidget {
             const Text('Icon Button Widget:'),
             const SizedBox(height: 10),
             IconButtonWidget(
-              onPressed: () {},
+              onTap: () {},
               icon: Icons.rocket,
             ),
             const SizedBox(height: 20),
