@@ -19,38 +19,38 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        GestureDetector(
-          onTap: product.onTapProduct,
-          child: Container(
-            width: 210,
-            height: 210,
-            decoration: BoxDecoration(
-              color: AppColors.whiteColor,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Image.network(
-              product.image,
-              fit: BoxFit.contain,
+    return InkWell(
+      onTap: product.onTapProduct,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            child: Container(
+              width: 210,
+              height: 210,
+              decoration: BoxDecoration(
+                color: AppColors.whiteColor,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Image.network(
+                product.image,
+                fit: BoxFit.contain,
+              ),
             ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4.0),
-          child: Text(
-            product.title,
-            style: AppTextStyles.body.copyWith(
-              fontWeight: FontWeight.w500,
-              fontSize: AppSpacing.medium,
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 4.0),
+            child: Text(
+              product.title,
+              style: AppTextStyles.body.copyWith(
+                fontWeight: FontWeight.w500,
+                fontSize: AppSpacing.medium,
+              ),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
             ),
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
           ),
-        ),
-        Expanded(
-          child: Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
@@ -67,8 +67,8 @@ class ProductCard extends StatelessWidget {
                   text: 'Add')
             ],
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
