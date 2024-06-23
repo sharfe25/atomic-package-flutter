@@ -43,10 +43,12 @@ class CartCard extends StatelessWidget {
             color: AppColors.whiteColor,
             borderRadius: BorderRadius.circular(10),
           ),
-          child: Image.network(
-            image,
-            fit: BoxFit.contain,
-          ),
+          child: image.isNotEmpty
+              ? Image.network(
+                  image,
+                  fit: BoxFit.contain,
+                )
+              : SizedBox.shrink(),
         ),
         Expanded(
           child: Padding(

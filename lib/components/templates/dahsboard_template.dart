@@ -53,7 +53,6 @@ class DashboardTemplate extends StatelessWidget {
         children: [
           Column(
             children: [
-              // Custom app bar with provided title and callbacks
               CustomAppBar(
                 bagBadge: bagBadge,
                 title: title,
@@ -61,7 +60,6 @@ class DashboardTemplate extends StatelessWidget {
                 onTapBag: onTapBag,
                 onTapMenu: onTapMenu,
               ),
-              // Expanded body content to occupy remaining space
               Expanded(
                 child: Padding(
                   padding: const EdgeInsets.only(

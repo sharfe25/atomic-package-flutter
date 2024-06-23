@@ -64,6 +64,7 @@ class CustomAppBar extends StatelessWidget {
             Align(
               alignment: Alignment.centerLeft,
               child: IconButtonWidget(
+                key: const Key('menu_btn'),
                 onTap: () {
                   if (onTapMenu != null) {
                     onTapMenu!();
@@ -77,6 +78,7 @@ class CustomAppBar extends StatelessWidget {
             Align(
               alignment: Alignment.centerLeft,
               child: IconButtonWidget(
+                key: const Key('back_btn'),
                 onTap: () {
                   if (onTapBack != null) {
                     onTapBack!();
@@ -101,6 +103,7 @@ class CustomAppBar extends StatelessWidget {
                 backgroundColor: AppColors.primaryColorLight,
                 label: Text(bagBadge.toString()),
                 child: IconButtonWidget(
+                  key: const Key('bag_btn'),
                   onTap: () {
                     if (onTapBag != null) {
                       onTapBag!();

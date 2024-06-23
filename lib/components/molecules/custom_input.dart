@@ -86,6 +86,7 @@ class CustomInput extends StatelessWidget {
         GestureDetector(
           onTap: onTap,
           child: TextFormField(
+            key: key,
             autofocus: autofocus,
             enabled: enabled,
             onChanged: (String value) {
