@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class PromotionalBannerModel {
-  final ImageProvider<Object> image;
+  final ImageProvider<Object>? image;
   final String title;
   final String promotion;
 

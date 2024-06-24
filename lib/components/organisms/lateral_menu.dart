@@ -101,7 +101,7 @@ class _LateralMenuState extends State<LateralMenu>
                     Padding(
                       padding: const EdgeInsets.only(bottom: AppSpacing.medium),
                       child: CustomButtonWidget(
-                        key: Key('sign_out_btn'),
+                        key: const Key('sign_out_btn'),
                         onPressed: () => widget.signOut(),
                         text: 'Sign out',
                       ),

@@ -32,10 +32,10 @@ class ProductCard extends StatelessWidget {
                 color: AppColors.whiteColor,
                 borderRadius: BorderRadius.circular(10),
               ),
-              child: Image.network(
+              child: product.image.isNotEmpty ? Image.network(
                 product.image,
                 fit: BoxFit.contain,
-              ),
+              ): const SizedBox.shrink(),
             ),
           ),
           Padding(

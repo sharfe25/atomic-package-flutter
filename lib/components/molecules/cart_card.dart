@@ -48,7 +48,7 @@ class CartCard extends StatelessWidget {
                   image,
                   fit: BoxFit.contain,
                 )
-              : SizedBox.shrink(),
+              : const SizedBox.shrink(),
         ),
         Expanded(
           child: Padding(

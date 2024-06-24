@@ -23,7 +23,7 @@ class PromotionalBanner extends StatelessWidget {
       decoration: BoxDecoration(
           color: AppColors.whiteColor,
           borderRadius: BorderRadius.circular(10),
-          image: DecorationImage(image: banner.image, fit: BoxFit.cover)),
+          image: banner.image != null ? DecorationImage(image: banner.image!, fit: BoxFit.cover) : null),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         crossAxisAlignment: CrossAxisAlignment.end,

@@ -1,6 +1,6 @@
 name: ecommerce_design_system_package
 description: Design system package for Flutter applications, organized according to Atomic Design principles.
-version: 1.0.4
+version: 1.0.5
 homepage: https://github.com/sharfe25/ecommerce_design_system_package
 
 environment:
