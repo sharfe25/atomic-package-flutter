@@ -25,29 +25,22 @@ class SkeletonWidget extends StatefulWidget {
 }
 
 class _SkeletonWidgetState extends State<SkeletonWidget> with SingleTickerProviderStateMixin {
-  /// Animation controller to manage the animation.
   late AnimationController _controller;
-
-  /// Animation that drives the opacity of the skeleton widget.
   late Animation<double> _animation;
 
   @override
   void initState() {
     super.initState();
-    // Initializing the animation controller with a duration of 1 second.
-    // The controller will repeat the animation in reverse indefinitely.
     _controller = AnimationController(
       duration: const Duration(seconds: 1),
       vsync: this,
     )..repeat(reverse: true);
 
-    // Creating a tween animation that goes from 0.0 to 1.0.
     _animation = Tween<double>(begin: 0.0, end: 1.0).animate(_controller);
   }
 
   @override
   void dispose() {
-    // Disposing the animation controller to free up resources.
     _controller.dispose();
     super.dispose();
   }

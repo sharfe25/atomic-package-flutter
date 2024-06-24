@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>LCOV - lcov.info - components/atoms/icon_button_widget.dart</title>
+  <link rel="stylesheet" type="text/css" href="../../gcov.css">
+</head>
+
+<body>
+
+          <table width="100%" border=0 cellspacing=0 cellpadding=0>
+            <tr><td class="title">LCOV - code coverage report</td></tr>
+            <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+
+            <tr>
+              <td width="100%">
+                <table cellpadding=1 border=0 width="100%">
+          <tr>
+            <td width="10%" class="headerItem">Current view:</td>
+            <td width="10%" class="headerValue"><a href="../../index.html" title="Click to go to top-level">top level</a> - <a href="index.html" title="Click to go to directory components/atoms">components/atoms</a> - icon_button_widget.dart<span style="font-size: 80%;"> (source / <a href="icon_button_widget.dart.func-c.html" title="Click to go to function table">functions</a>)</span></td>
+            <td width="5%"></td>
+            <td width="5%"></td>
+            <td width="5%" class="headerCovTableHead">Coverage</td>
+            <td width="5%" class="headerCovTableHead" title="Covered + Uncovered code">Total</td>
+            <td width="5%" class="headerCovTableHead" title="Exercised code only">Hit</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test:</td>
+            <td class="headerValue">lcov.info</td>
+            <td></td>
+            <td class="headerItem">Lines:</td>
+            <td class="headerCovTableEntryHi">100.0&nbsp;%</td>
+            <td class="headerCovTableEntry">15</td>
+            <td class="headerCovTableEntry">15</td>
+          </tr>
+          <tr>
+            <td class="headerItem">Test Date:</td>
+            <td class="headerValue">2024-06-24 14:38:23</td>
+            <td></td>
+            <td class="headerItem">Functions:</td>
+            <td class="headerCovTableEntryHi">-</td>
+            <td class="headerCovTableEntry">0</td>
+            <td class="headerCovTableEntry">0</td>
+          </tr>
+                  <tr><td><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+                </table>
+              </td>
+            </tr>
+
+            <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+          </table>
+
+          <table cellpadding=0 cellspacing=0 border=0>
+            <tr>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>
+<pre class="sourceHeading">            Line data    Source code</pre>
+<pre class="source">
+<span id="L1"><span class="lineNum">       1</span>              : import 'package:flutter/material.dart';</span>
+<span id="L2"><span class="lineNum">       2</span>              : </span>
+<span id="L3"><span class="lineNum">       3</span>              : import '../tokens/app_colors.dart';</span>
+<span id="L4"><span class="lineNum">       4</span>              : import '../tokens/app_spacing.dart';</span>
+<span id="L5"><span class="lineNum">       5</span>              : </span>
+<span id="L6"><span class="lineNum">       6</span>              : /// A custom icon button widget that displays an icon and handles tap events.</span>
+<span id="L7"><span class="lineNum">       7</span>              : ///</span>
+<span id="L8"><span class="lineNum">       8</span>              : /// The [IconButtonWidget] is a stylized button that displays an icon and</span>
+<span id="L9"><span class="lineNum">       9</span>              : /// can respond to tap events with a custom callback function.</span>
+<span id="L10"><span class="lineNum">      10</span>              : class IconButtonWidget extends StatelessWidget {</span>
+<span id="L11"><span class="lineNum">      11</span>              :   /// The callback function to be called when the button is pressed.</span>
+<span id="L12"><span class="lineNum">      12</span>              :   final VoidCallback onTap;</span>
+<span id="L13"><span class="lineNum">      13</span>              : </span>
+<span id="L14"><span class="lineNum">      14</span>              :   /// The background color of the icon.</span>
+<span id="L15"><span class="lineNum">      15</span>              :   final Color? iconColor;</span>
+<span id="L16"><span class="lineNum">      16</span>              : </span>
+<span id="L17"><span class="lineNum">      17</span>              :   /// The icon to be displayed in the button.</span>
+<span id="L18"><span class="lineNum">      18</span>              :   final IconData icon;</span>
+<span id="L19"><span class="lineNum">      19</span>              : </span>
+<span id="L20"><span class="lineNum">      20</span>              :   /// The size of the icon.</span>
+<span id="L21"><span class="lineNum">      21</span>              :   final double? iconSize;</span>
+<span id="L22"><span class="lineNum">      22</span>              : </span>
+<span id="L23"><span class="lineNum">      23</span>              :   /// The background color of the button.</span>
+<span id="L24"><span class="lineNum">      24</span>              :   final Color? backgroundColor;</span>
+<span id="L25"><span class="lineNum">      25</span>              : </span>
+<span id="L26"><span class="lineNum">      26</span>              :   /// The padding inside the button. Defaults to [AppSpacing.medium].</span>
+<span id="L27"><span class="lineNum">      27</span>              :   final double padding;</span>
+<span id="L28"><span class="lineNum">      28</span>              : </span>
+<span id="L29"><span class="lineNum">      29</span>              :   /// Creates an [IconButtonWidget].</span>
+<span id="L30"><span class="lineNum">      30</span>              :   ///</span>
+<span id="L31"><span class="lineNum">      31</span>              :   /// The [onTap] and [icon] parameters are required. The [iconColor],</span>
+<span id="L32"><span class="lineNum">      32</span>              :   /// [iconSize], and [backgroundColor] parameters are optional.</span>
+<span id="L33"><span class="lineNum">      33</span> <span class="tlaGNC tlaBgGNC">           5 :   const IconButtonWidget({</span></span>
+<span id="L34"><span class="lineNum">      34</span>              :     Key? key,</span>
+<span id="L35"><span class="lineNum">      35</span>              :     required this.onTap,</span>
+<span id="L36"><span class="lineNum">      36</span>              :     this.iconColor,</span>
+<span id="L37"><span class="lineNum">      37</span>              :     this.iconSize,</span>
+<span id="L38"><span class="lineNum">      38</span>              :     required this.icon,</span>
+<span id="L39"><span class="lineNum">      39</span>              :     this.backgroundColor,</span>
+<span id="L40"><span class="lineNum">      40</span>              :     this.padding = AppSpacing.medium,</span>
+<span id="L41"><span class="lineNum">      41</span> <span class="tlaGNC">           5 :   }) : super(key: key);</span></span>
+<span id="L42"><span class="lineNum">      42</span>              : </span>
+<span id="L43"><span class="lineNum">      43</span> <span class="tlaGNC">           5 :   @override</span></span>
+<span id="L44"><span class="lineNum">      44</span>              :   Widget build(BuildContext context) {</span>
+<span id="L45"><span class="lineNum">      45</span> <span class="tlaGNC">           5 :     return GestureDetector(</span></span>
+<span id="L46"><span class="lineNum">      46</span> <span class="tlaGNC">           5 :       key: key,</span></span>
+<span id="L47"><span class="lineNum">      47</span> <span class="tlaGNC">           5 :       onTap: onTap,</span></span>
+<span id="L48"><span class="lineNum">      48</span> <span class="tlaGNC">           5 :       child: Container(</span></span>
+<span id="L49"><span class="lineNum">      49</span> <span class="tlaGNC">          10 :         padding: EdgeInsets.all(padding),</span></span>
+<span id="L50"><span class="lineNum">      50</span> <span class="tlaGNC">           5 :         decoration: BoxDecoration(</span></span>
+<span id="L51"><span class="lineNum">      51</span> <span class="tlaGNC">           5 :           color: backgroundColor ?? AppColors.grayColor,</span></span>
+<span id="L52"><span class="lineNum">      52</span> <span class="tlaGNC">           5 :           borderRadius: BorderRadius.circular(20),</span></span>
+<span id="L53"><span class="lineNum">      53</span>              :         ),</span>
+<span id="L54"><span class="lineNum">      54</span> <span class="tlaGNC">           5 :         child: Icon(</span></span>
+<span id="L55"><span class="lineNum">      55</span> <span class="tlaGNC">           5 :           icon,</span></span>
+<span id="L56"><span class="lineNum">      56</span> <span class="tlaGNC">           5 :           size: iconSize ?? 20,</span></span>
+<span id="L57"><span class="lineNum">      57</span> <span class="tlaGNC">           5 :           color: iconColor,</span></span>
+<span id="L58"><span class="lineNum">      58</span>              :         ),</span>
+<span id="L59"><span class="lineNum">      59</span>              :       ),</span>
+<span id="L60"><span class="lineNum">      60</span>              :     );</span>
+<span id="L61"><span class="lineNum">      61</span>              :   }</span>
+<span id="L62"><span class="lineNum">      62</span>              : }</span>
+        </pre>
+              </td>
+            </tr>
+          </table>
+          <br>
+
+          <table width="100%" border=0 cellspacing=0 cellpadding=0>
+            <tr><td class="ruler"><img src="../../glass.png" width=3 height=3 alt=""></td></tr>
+            <tr><td class="versionInfo">Generated by: <a href="https://github.com//linux-test-project/lcov" target="_parent">LCOV version 2.1-1</a></td></tr>
+          </table>
+          <br>
+
+</body>
+</html>
